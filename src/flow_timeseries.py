@@ -1,6 +1,6 @@
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
+import numpy as np #type:ignore
+import pandas as pd #type:ignore
+import matplotlib.pyplot as plt #type:ignore
 
 # Load data
 data4 = np.load("data/raw/PEMS04.npz")["data"]
