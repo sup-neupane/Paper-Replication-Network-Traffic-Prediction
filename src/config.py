@@ -25,14 +25,14 @@ class Config:
     n_transformer_layers = 1            # ASSUMED: paper implies single block
     tcn_kernel_size = 3                 # explicitly stated
     tcn_layers = 4                      # explicitly stated
-    tcn_channels = 64                   # ASSUMED: match Transformer output width
+    tcn_channels = 512                  
 
     # --- Training ---
     batch_size = 64                     # ASSUMED: common default
     learning_rate = 0.001               # explicitly stated
     weight_decay = 1e-4                 # ASSUMED: standard L2 lambda
     max_epochs = 200
-    patience = 15                       # ASSUMED: early stopping patience
+    patience = 25                       # ASSUMED: early stopping patience
     grad_clip = 5.0                     # ASSUMED: standard for transformer training
 
     # --- System ---

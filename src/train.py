@@ -78,8 +78,9 @@ def run_training(model, train_loader, val_loader, cfg):
     )
 
     # Learning rate scheduler: halve lr if val loss stagnates for 5 epochs
+# REPLACE WITH THIS
     scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(
-        optimizer, mode="min", factor=0.5, patience=5, verbose=True
+        optimizer, mode="min", factor=0.5, patience=5
     )
 
     criterion = nn.MSELoss()
